@@ -1,0 +1,43 @@
+<html>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!--Jquery Included-->
+		<script src="/scripts/jquery-3.1.1.min.js"></script>
+		<script src="/scripts/jquery.form.min.js"></script>
+		<!-- Bootstrap CSS -->	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+	<body>
+<h2>Bootstrap: Collapse panel with radio buttons</h2>
+<i>A simple method to collapse and expand a Bootstrap collapsable panel using radio buttons</i>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <span>Display panel: </span>
+      <input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne"/> Yes
+      <input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne" checked/> No
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              Header
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Content</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	</body>
+
+</html>

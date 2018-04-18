@@ -1,0 +1,93 @@
+<html>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+		<style type="text/css">
+			body { 
+			  background: url(bg.jpg) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			}
+			#txt{
+				color: #000000;
+				font-family: 'Arial';
+			}
+		</style>
+	<body>
+		<nav class="navbar navbar-expand-sm bg-light">
+		<a class="navbar-brand" href="#">LOGO</a>
+			<ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link 1</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link 2</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link 3</a>
+			</li>
+			</ul>
+
+		</nav>
+			<div class="container mt-5 " id="cont">
+
+				<div class="row">
+					<div class="col-md-8 mx-auto">
+						<form id="fuploader" method="post" action="/short" enctype="multipart/form-data" >
+
+							<div>
+								<div class="radio"><label id="txt"><input type="radio" name="urlornot"  value="url" > URL</label></div>
+								<div class="radio"><label id="txt"><input type="radio" name="urlornot"  value="text"> TEXT</label></div>
+								<div class="radio"><label id="txt"><input type="radio" name="urlornot"  value="image"> FILE</label></div>
+							</div>
+						
+							<label id="txt">URL/TEXT:</label>
+							<div class="form-group"><input class="form-control" type="text" name="url"></div>
+						
+							<label id="txt">KEY:</label>
+							
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+						  	  		<span class="input-group-text" id="basic-addon3">https://localhost:3000/</span>
+						 		 </div>
+						 		 <input class="form-control" type="text" name="key" id="basic-url" aria-describedby="basic-addon3">
+						 	</div>
+
+							<label id="txt">Choose Image</label>
+							<div class="form-group"><input class="form-control" type="file" name="imgUploader"></div>
+
+							<span>Display panel: </span>
+					        <input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne"/> Yes
+						      <input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne" checked/> No
+							  <div class="panel-group" id="accordion">
+						        <div class="panel panel-default">
+						          <div class="panel-heading">
+						            <h4 class="panel-title">
+						              Header
+						            </h4>
+						          </div>
+						          <div id="collapseOne" class="panel-collapse collapse">
+						            <div class="panel-body">
+						              <p>Content</p>
+						            </div>
+						          </div>
+						        </div>
+					      	</div>	
+
+						<input class="btn btn-primary btn-block" type="submit" value="Send the data over Web">
+
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+	</body>
+
+</html>
