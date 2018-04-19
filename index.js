@@ -107,5 +107,7 @@ app.get('/:key',function(req,res){
 	})
 });
 
-app.listen('3000');
+app.listen(process.env.PORT || '3000',function(){
+    console.log("Exress running on %d in %s mode",this.address().port,app.settings.env);
+});
 	
